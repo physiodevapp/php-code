@@ -1,13 +1,13 @@
 <?php 
 
   $fileName = "roomList.json";
-
-  $roomList = file_get_contents("$fileName");
+  $roomData = file_get_contents($fileName);
+  $roomList = json_decode($roomData, true);
 
 ?>
 
 <pre>
 
-  <?= $roomList ?>
-  
+  <?php print_r($roomList); ?>
+
 </pre>
