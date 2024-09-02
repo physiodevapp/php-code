@@ -10,8 +10,8 @@
       "Discount" => rand(5, 20)
     );
   }
-  
-  echo '<pre>';
-  print_r($roomList);
-  echo '</pre>';
 ?>
+
+<pre>
+  <?= print_r($roomList) ?>
+</pre>
