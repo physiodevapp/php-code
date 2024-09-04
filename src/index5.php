@@ -1,8 +1,15 @@
 <?php 
 
+require '../vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
 $servername = "localhost";
-$username = "root_php";
-$password = "eVkDJTHJmL6RdI";
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASSWORD'];
 $dbname = "miranda";
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 

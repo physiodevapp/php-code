@@ -1,0 +1,19 @@
+{
+    "name": "physiodevapp/php-code",
+    "description": "my first php project",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Physiodevapp\\PhpCode\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "physiodevapp",
+            "email": "edu.gamboa.rodriguez@gmail.com"
+        }
+    ]
+}
