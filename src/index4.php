@@ -7,7 +7,7 @@
 
   if ($roomId) {
     $filteredRooms = array_filter($roomList, function($room) use ($roomId) {
-      return $room['id'] === $roomId;
+      return (int)$room['id'] === $roomId;
     });
 
     $room = !empty($filteredRooms) ? reset($filteredRooms) : null;
