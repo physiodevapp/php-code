@@ -3,7 +3,8 @@
   $roomListData = file_get_contents($filePath);
   $roomList = json_decode($roomListData, true);
 
-  $roomId = isset($_GET['id']) ? (int)$_GET['id'] : null;
+  $roomId = isset($_GET['id']) && filter_var($_GET['id'], FILTER_VALIDATE_INT) !== false ? (int)$_GET['id'] : null;
+
   if ($roomId) {
     $filteredRooms = array_filter($roomList, function($room) use ($roomId) {
       return $room['id'] === $roomId;
