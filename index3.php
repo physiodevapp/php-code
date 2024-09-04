@@ -11,9 +11,9 @@
     <li>
       <ul style="position: relative;top: -1.06em;">
         <li><?= htmlspecialchars($room["name"]); ?></li>
-        <li><?= htmlspecialchars($room["number"]) ?></li>
-        <li><?= htmlspecialchars($room["price_night"]) ?></li>
-        <li><?= htmlspecialchars($room["discount"]) ?></li>
+        <li><?= htmlspecialchars($room["number"]); ?></li>
+        <li><?= htmlspecialchars($room["price_night"]); ?></li>
+        <li><?= htmlspecialchars($room["discount"]); ?></li>
       </ul>      
     </li>
   <?php endforeach; ?>
