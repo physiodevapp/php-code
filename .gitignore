@@ -195,7 +195,7 @@ $RECYCLE.BIN/
 /vendor/
 
 # Ignore Blade templates
-/views/
+/views/*bladec
 
 # Ignore compiled Blade templates
 /cache/
